@@ -16,8 +16,16 @@ end
 
 array_of_pairs = pair_generator(["Dolly", "Aaron", "John", "Rich", "Shane", "Ed", "Jennifer", "Heather", "Jenny"])
 
-array_of_pairs.each do |group|
-	puts group.to_s
+def groups(array1)
+	array = []
+	array1.each do |group|
+		amount_in_group = group.count
+		array.push(amount_in_group)
+	end
+	array
 end
+
+groups(array_of_pairs)
+
 
 
