@@ -14,7 +14,7 @@ def pair_generator(array)
 	array_of_pairs
 end
 
-array_of_pairs = pair_generator(["Dolly", "Aaron", "John", "Rich", "Shane", "Ed", "Jennifer", "Heather", "Jenny"])
+# array_of_pairs = pair_generator(["Dolly", "Aaron", "John", "Rich", "Shane", "Ed", "Jennifer", "Heather", "Jenny"])
 
 def groups(array1)
 	array = []
@@ -25,7 +25,7 @@ def groups(array1)
 	array
 end
 
-groups(array_of_pairs)
+# groups(array_of_pairs)
 
 
 
