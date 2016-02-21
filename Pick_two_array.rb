@@ -1,16 +1,23 @@
-def pair_generator
-	array = ["Dolly", "Aaron", "John", "Rich", "Shane", "Ed", "Jennifer", "Heather", "Jenny"]
+def pair_generator(array)
+	array_of_pairs = []
 	while array.count >= 2
 		person_one = array.sample
 		array.delete(person_one)
 		person_two = array.sample
 		array.delete(person_two)
-		group_1_array = [person_one, person_two]
-		if array.count == 1
-			group_1_array.push(array.sample)
-		end
-		puts group_1_array.to_s
+		group = [person_one, person_two]
+			if array.count == 1
+				group.push(array.sample)
+			end
+		array_of_pairs.push(group)
 	end 
+	array_of_pairs
 end
 
-pair_generator
+array_of_pairs = pair_generator(["Dolly", "Aaron", "John", "Rich", "Shane", "Ed", "Jennifer", "Heather", "Jenny"])
+
+array_of_pairs.each do |group|
+	puts group.to_s
+end
+
+
